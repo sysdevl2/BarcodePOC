@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/white_grey</color>
+    <color name="colorPrimaryDark">@color/darker_pale_grey</color>
+    <color name="colorAccent">@color/light_green</color>
+
+    <color name="pinkish_grey">#c1c1c1</color>
+    <color name="primary_background">#f6f6f6</color>
+
+    <color name="light_green">#43a047</color>
+    <color name="dark_green">#004d40</color>
+    <color name="tomato">#e73b2b</color>
+    <color name="expired_red">#ee4122</color>
+    <color name="saver_red">#9a262d</color>
+    <color name="yellow_background">#fccf00</color>
+
+    <color name="slate_grey_two">#686b6e</color>
+    <color name="dark_navy_blue">#00020f</color>
+    <color name="white_grey">#f6f6f6</color>
+    <color name="darker_pale_grey">#d9dcdb</color>
+    <color name="saver_green">#0f5640</color>
+
+    <color name="transparent_white">#b2ffffff</color>
+
+    <!--Morrisons Brand Colours-->
+    <color name="british_green">#004e37</color>
+    <color name="fresh_yellow">#fcbc00</color>
+    <color name="fresh_green">#2ea836</color>
+    <color name="warm_grey">#686c6f</color>
+    <color name="pale_grey">#e3e6e5</color>
+    <color name="black">#00200f</color>
+    <color name="white">#ffffff</color>
+    <color name="gold">#bb9c00</color>
+</resources>

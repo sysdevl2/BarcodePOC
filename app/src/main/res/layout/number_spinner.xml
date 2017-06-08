@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/MainButtonStyle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="-"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:text="000"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/MainButtonStyle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="+"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button"
+        android:textSize="10sp" />
+</RelativeLayout>

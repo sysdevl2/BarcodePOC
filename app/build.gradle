@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "uk.co.morrisonsplc.sysdevl2.mycameratracker"
+        minSdkVersion 16
+        targetSdkVersion 25
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services:10.2.4'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.jakewharton:butterknife-annotations:8.5.1'
+    compile files('libs/retrofit-2.3.0.jar')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/converter-gson-2.3.0.jar')
+    compile files('libs/gson-2.8.0 (1).jar')
+}

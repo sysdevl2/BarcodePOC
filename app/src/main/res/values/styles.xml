@@ -1,0 +1,84 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/app_base_text</item>
+        <item name="android:textColorSecondary">@color/dark_green</item>
+        <item name="android:textColorPrimaryInverse">@color/pale_grey</item>
+        <item name="android:textColorSecondaryInverse">@color/white_grey</item>
+        <item name="android:colorForeground">@color/dark_green</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="MainHeadingTextStyle">
+        <item name="android:textColor">@color/british_green</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:minHeight">@dimen/main_heading_height</item>
+        <item name="android:paddingTop">@dimen/spacing_small</item>
+        <item name="android:textSize">@dimen/title_large</item>
+    </style>
+
+    <style name="HomeMenuItemTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="fontPath">fonts/MorrisonsAgenda-Medium.otf</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/fresh_green</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:drawablePadding">@dimen/spacing_small</item>
+    </style>
+
+    <style name="MainButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:padding">@dimen/spacing_small</item>
+        <item name="fontPath">fonts/MorrisonsAgenda-Medium.otf</item>
+        <item name="android:minHeight">@dimen/standard_touch_height</item>
+        <item name="android:textSize">@dimen/button_default_text_size</item>
+    </style>
+
+    <style name="ShoppingListSettingsTitle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/pale_grey</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:minHeight">@dimen/standard_touch_height</item>
+        <item name="android:paddingStart">@dimen/spacing_large</item>
+        <item name="android:paddingEnd">@dimen/spacing_large</item>
+        <item name="fontPath">fonts/MorrisonsAgenda-Medium.otf</item>
+    </style>
+
+    <style name="ShoppingListSettingsRadioButton">
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:background">@color/white</item>
+        <item name="fontPath">fonts/MorrisonsAgenda-Medium.otf</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:minHeight">@dimen/standard_touch_height</item>
+        <item name="android:layout_marginStart">@dimen/spacing_large</item>
+        <item name="android:paddingEnd">@dimen/spacing_large</item>
+        <item name="buttonTint">@color/british_green</item>
+    </style>
+
+    <style name="ShoppingItemDropdown">
+        <item name="android:textAppearance">?android:attr/textAppearanceListItemSmall</item>
+        <item name="android:textColor">@color/british_green</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="android:paddingEnd">?android:attr/listPreferredItemPaddingEnd</item>
+        <item name="android:paddingStart">?android:attr/listPreferredItemPaddingStart</item>
+    </style>
+
+    <style name="offer_confirmation_dialog" parent="android:Theme.Holo.Light.Dialog.NoActionBar.MinWidth">
+        <item name="android:layout_marginStart">@dimen/spacing_very_very_large</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_very_very_large</item>
+        <item name="android:layout_marginTop">@dimen/spacing_extremely_large_plus</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_extremely_large_plus</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

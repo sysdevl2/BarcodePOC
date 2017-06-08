@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@color/white"
+    android:adjustViewBounds="true">
+
+    <include layout="@layout/view_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:adjustViewBounds="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent"
+            android:adjustViewBounds="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true">
+
+                <uk.co.morrisonsplc.sysdevl2.mycameratracker.barcodereader.ui.camera.CameraSourcePreview
+                    android:id="@+id/preview"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:weightSum="1"
+                    android:scaleType="fitXY">
+
+                    <uk.co.morrisonsplc.sysdevl2.mycameratracker.barcodereader.ui.camera.GraphicOverlay
+                        android:id="@+id/graphicOverlay"
+                        android:adjustViewBounds="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="0dp"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1.22"
+                        android:scaleType="fitXY"/>
+                </uk.co.morrisonsplc.sysdevl2.mycameratracker.barcodereader.ui.camera.CameraSourcePreview>
+
+                <LinearLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line">
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/topShade"
+                    android:layout_height="160dp"
+                    android:alpha="0.6"
+                    android:background="@color/black"
+                    android:contentDescription=""
+                    android:layout_alignParentTop="true"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:alpha="0.6"
+                    android:background="@color/black"
+                    android:contentDescription=""
+                    android:layout_below="@id/topShade"
+                    android:layout_above="@+id/bottomShade"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:alpha="0.6"
+                    android:background="@color/black"
+                    android:contentDescription=""
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription"
+                    android:layout_alignParentEnd="true"
+                    android:layout_above="@+id/bottomShade"
+                    android:layout_below="@id/topShade"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:alpha="0.6"
+                    android:background="@color/black"
+                    android:contentDescription=""
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription"
+                    android:id="@+id/bottomShade"
+                    android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="18dp"
+                    android:text="@string/barcodeAdvice"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+            </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

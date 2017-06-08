@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@color/white">
+
+    <include layout="@layout/view_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.4"
+                    android:background="@color/black"
+                    android:contentDescription=""
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fruit_top"
+                    tools:ignore="ContentDescription" />
+
+                <uk.co.morrisonsplc.sysdevl2.mycameratracker.barcodereader.ui.camera.CameraSourcePreview
+                    android:id="@+id/preview"
+                    android:layout_width="240dp"
+                    android:layout_height="310dp"
+                    android:layout_margin="5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:weightSum="1"
+                    android:background="@drawable/customborder">
+
+                    <uk.co.morrisonsplc.sysdevl2.mycameratracker.barcodereader.ui.camera.GraphicOverlay
+                        android:id="@+id/graphicOverlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1.22" />
+
+                </uk.co.morrisonsplc.sysdevl2.mycameratracker.barcodereader.ui.camera.CameraSourcePreview>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="@string/barcodeAdvice"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+            </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
